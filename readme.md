@@ -4,7 +4,25 @@
 
 The CWE3D Lister is a 3D printer engineered for reliability, precision, and ease of maintenance. While its design draws inspiration from various open-source projects, including [Voron Design](https://docs.vorondesign.com/), [Prusa Research](https://www.prusa3d.com/), and [RatRig](https://ratrig.com/), the Lister has evolved into a unique machine tailored for specific use cases.
 
-## Printer Purpose and Design Philosophy
+## South African market only?
+
+The Lister machine cuts no corners, the machine was designed for the South African market. Even if we wanted to ship it elsewhere, it would have been too expensive. Because the machine was made to be exceptionally reliable this added to the weight rather quickly.
+
+Anyone is welcome to build the machine, but we will most likely never have the time to write the comprehensive documentation required to build one from scratch.
+
+## Small company, attention to detail
+
+We are a small company in South Africa running under the legal name Cross Works Engineering PTY. LTD. Our capacity is to build around 4 printers a month, we spend an enormous amount of time to make every Lister printer assembled by us is constructed with precision and quality control. We do 50 hours of tests per printer. It runs in and gets tested at the same time.
+
+This is the main motivation behind the printers unique names.
+
+## We build and sell Lister printers
+
+Everytime someone buys a printer from us, it gives us that little movement to do research in the market and test new ideas, these ideas then get directly implemented into the printer giving your the oppertunity to upgrade your own to the latest adancements.
+
+We will sell kits to enable you to upgrade to new worthy 3D printer technology. Giving you an easy upgrade path.
+
+## Printer purpose and design philosophy
 
 The Lister 3D printer is designed for:
 
@@ -21,16 +39,18 @@ Our design philosophy prioritizes:
 3. Simplicity (KISS principle)
 4. Consistent, successful prints
 5. Modifiability
-6. Aesthetics
+6. Classic Aesthetics
 7. Precision
 8. Durability
 9. Open-source principles and community support
+10. Stainless steel ballscrews Z system
 
 It's important to note that the Lister is not designed to compete with high-speed, performance-oriented, or fully enclosed machines like some Voron or RatRig models. Instead, it focuses on consistent, high-quality prints with a range of common and engineering-grade filaments that don't require special environmental controls.
 
 ## Filament Compatibility
 
 The Lister 3D printer is optimized for filaments that:
+
 - Don't require a heated chamber
 - Are less prone to warping
 - Don't need bed temperatures exceeding 90°C
@@ -45,19 +65,26 @@ Compatible filaments include:
 6. Some low-warp nylon blends
 7. Various specialty and bio-based filaments
 
-The printer itself uses:
+The printer itself is printed using:
+
 - eSun ePLA-ST for most parts
 - eSun PETG for black back panels
 - Bamboo Labs PEGT-CF for brackets
 - eSun TPU 95A for anti-vibration feet
 
+There are stronger filaments, we have tried a wide variate, these filaments are the conclusion measuring the pros and cons up against more advanced materials.
+
+Printed parts in the materials was proven to be reliable for years under normal conditions.
+
 ### 0.6mm Hardened Nozzle
 
 The Lister uses a 0.6mm hardened steel nozzle, chosen for:
+
 - Improved flow with engineering filaments like PETG-CF
 - Capability for 0.3mm layer heights, balancing strength and print speed
 - Resistance to abrasive filaments
 - Reduced backpressure compared to 0.4mm nozzles
+- Far less prone to blockage when printing exotic materials.
 
 This choice reflects our focus on practical, reliable printing rather than ultra-fine detail work.
 
@@ -65,9 +92,26 @@ This choice reflects our focus on practical, reliable printing rather than ultra
 
 ### Reliability
 
+The Lister printer is build using the best high-end components carefully considering price and value of the parts.
+
+Some honourable mentions of componets we use in the Lister V1.x models;
+
+1. Bigtreetech SKR Pro V1.2 controller board
+2. TMC 2209 silent stepper drivers
+3. Meanwell power supply (350W)
+4. 4x Wantai 0.9 Degree 2.4A stepper motors
+5. Aluminium profile PG2020/40 construction
+6. Hundreds of quality stainless steel screws
+7. 220V heating bed with solid state relay
+8. Bigtreetech H2 V2S all metal direct drive extruder.
+9. 12mm linear Y and Z rod system with a 8mm X linear system.
+10. Exeptional stable Z bed heating system with great flatness (within 0.200mm flatness).
+
 ### Precision
 
-#### Bed Flatness 
+The Lister is carefully crafted and assembled using reliable construction 
+
+### Bed Flatness
 
 ### Simplicity
 
