@@ -1,7 +1,7 @@
 ## Just received your printer?
-Thank you for supporting us. We hope that this investment was a valuable purchase in your life. The Lister is designed to exceed required specifications in many areas, helping it to last as long as possible.
+Thank you for supporting us. We hope that this machine will be a valuable attribute to your 3D printing needs. The Lister is designed to exceed required specifications in many areas, helping it to last as long as possible.
 
-Each printer undergoes hours and days of tuning, with every single part quality checked to a measured level. While transit can be tough, we continually work to perfect our packaging.
+Each printer undergoes hours and days of tuning, with every single part quality checked to a measured level. While transit can be tough for a machine of its size and weight, we continually work to improve our packaging so the printer arrives in pristine condition.
 
 ### Unboxing
 1. Carefully unscrew the entire wooden protective structure surrounding the printer before attempting to lift it out. This precaution prevents damage to small components like the runout sensor and stops the gantry from catching on the top box storage structure.

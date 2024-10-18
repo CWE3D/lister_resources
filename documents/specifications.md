@@ -73,6 +73,7 @@
   - Maximum Extrusion Force: 770 N (approximately 7.5 kg)
   - Filament Diameter and Tolerance: 1.75 ± 0.05 mm
   - Extrusion Speed: Up to 600 mm³/min (depending on filament type)
+    - [See more detail](h2_extruder.md)
 - **Nozzle**: 0.6mm Hardened Steel Nozzle
 - **Cooling**: 5015 24V part cooling blower
 
