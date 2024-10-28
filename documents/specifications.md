@@ -2,12 +2,12 @@
 
 ## General Specifications
 
-| Specification | Value |
-|---------------|-------|
-| Weight | 23kg |
-| Default Max Acceleration | 3000 mm/s² |
-| Default Max Velocity | 300 mm/s |
-| Printable Area | 250mm x 250mm x 240mm |
+| Specification | Value                                          |
+|---------------|------------------------------------------------|
+| Weight | 23kg                                           |
+| Default Max Acceleration | 2500 mm/s²                                     |
+| Default Max Velocity | 300 mm/s                                       |
+| Printable Area | 250mm x 250mm x 240mm                          |
 | Dimensions | Height: 577mm<br>Width: 460mm<br>Length: 520mm |
 
 ## Frame and Construction
@@ -72,9 +72,11 @@
   - Weight: 198g (excluding wiring)
   - Maximum Extrusion Force: 770 N (approximately 7.5 kg)
   - Filament Diameter and Tolerance: 1.75 ± 0.05 mm
-  - Extrusion Speed: Up to 600 mm³/min (depending on filament type)
+  - Extrusion Speed: Up to 600 mm³/min or 10 mm³/s (depending on filament type)
     - [See more detail](h2_extruder.md)
-- **Nozzle**: 0.6mm Hardened Steel Nozzle
+- **Nozzle**: 0.5mm Hardened Steel Nozzle
+  - We recently decided to make our current previous 0.6mm nozzle default to 0.5mm 
+  - [Please see specifics on print speeds and nozzle here](05mm_nozzle.md)
 - **Cooling**: 5015 24V part cooling blower
 
 ## Electrical System

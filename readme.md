@@ -23,6 +23,9 @@ A comprehensive guide for new Lister owners. This document walks you through unb
 ### [Specifications](documents/specifications.md)
 Detailed technical specifications of the Lister 3D printer. This document provides in-depth information about the printer's components, capabilities, and compatible materials.
 
+### [Printable Parts Directory](documents/parts_layout.md)
+A comprehensive list of all the parts and accessories used in the Lister 3D printer. This document provides a detailed breakdown of each part and its components.
+
 ## About Us
 
 CWE3D is a small company based in South Africa, operating under the legal name Cross Works Engineering PTY LTD. We specialize in creating high-quality 3D printers tailored for our local market's needs.

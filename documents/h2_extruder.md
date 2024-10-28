@@ -6,6 +6,7 @@ The BIQU H2 V2S is a direct drive extruder designed for various 3D printers, not
 - **Extrusion Method**: Dual gear extrusion
 - **Maximum Extrusion Force**: 7.5 kg (varies with filament type)
 - **Extrusion Rate**: 600 mm³/min (dependent on filament)
+  - 10 mm³/s volumetric flow rate
 - **Weight**: 195 g (includes heating block, thermistor, and fan)
 - **Compatibility**: Works with multiple 3D printers like BIQU B1, Ender 3 series, CR series, and others.
 
