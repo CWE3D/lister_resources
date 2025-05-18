@@ -1,0 +1,121 @@
+# Hugo configuration file
+title: Lister 3D Printers
+baseURL: 'https://lister3d.co.za/'
+languageCode: 'en-us'
+
+enableRobotsTXT: true
+# Parse Git commit
+# enableGitInfo: true
+# enableEmoji: false
+hasCJKLanguage: true
+
+outputs:
+  home: [HTML]
+  page: [HTML]
+  section: [HTML, RSS]
+
+defaultContentLanguage: en
+languages:
+  en:
+    languageName: English
+    weight: 1
+    title: Lister 3D Printers
+
+# import hextra as module
+module:
+  hugoVersion:
+    extended: true
+
+  imports:
+  - path: github.com/imfing/hextra
+
+markup:
+  highlight:
+    noClasses: false
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      passthrough:
+        delimiters:
+          block: [['\[', '\]'], ['$$', '$$']]
+          inline: [['\(', '\)']]
+        enable: true
+
+enableInlineShortcodes: true
+
+menu:
+  main:
+    - name: Documentation
+      pageRef: /docs
+      weight: 1
+    - name: About
+      pageRef: /about
+      weight: 2
+    - name: Contact ↗
+      url: "https://github.com/imfing"
+      weight: 3
+    - name: Search
+      weight: 4
+      params:
+        type: search
+    - name: GitHub
+      weight: 5
+      url: "https://github.com/imfing/hextra-starter-template"
+      params:
+        icon: github
+
+  # sidebar:
+  # - identifier: more
+  #   name: More
+  #   params:
+  #     type: separator
+  #   weight: 1
+  # - identifier: about
+  #   name: "About"
+  #   pageRef: "/about"
+  #   weight: 2
+  # - identifier: hugoDocs
+  #   name: "Hugo Docs ↗"
+  #   url: "https://gohugo.io/documentation/"
+  #   weight: 3
+
+highlight:
+  copy:
+    enable: true
+    # hover | always
+    display: hover
+
+params:
+  navbar:
+    displayTitle: false
+    displayLogo: true
+    logo:
+      path: images/lister_logo_light.png
+      dark: images/lister_logo_dark.png
+      light: images/lister_logo_light.png
+      link: /
+      width: 200
+      height: 0
+
+  # page:
+  #   # Control page title display
+  #   titleSeparator: "|"
+  #   titleStyle: "normal"
+  #   hideMeta: true
+
+  highlight:
+    copy:
+      enable: true
+      # hover | always
+      display: hover
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+    width: normal
+
+  editURL:
+    enable: true
+    base: "https://github.com/imfing/hextra-starter-template/edit/main/content"

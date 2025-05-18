@@ -1,0 +1,123 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lister 3D Printers – Documentation</title>
+    <link>http://localhost:1313/documents/</link>
+    <description>Recent content in Documentation on Lister 3D Printers</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Feb 2024 14:38:54 -0800</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/documents/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/documents/markdown/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/documents/markdown/</guid>
+      <description>
+        
+        
+        &lt;h1&gt;Markdown Cheatsheet&lt;/h1&gt;&lt;h2&gt;Headers&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;headers&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#headers&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h1&gt;H1&lt;/h1&gt;&lt;h2&gt;H2&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;h2&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#h2&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;H3&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;h3&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#h3&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;h4&gt;H4&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;h4&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#h4&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h4&gt;&lt;h5&gt;H5&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;h5&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#h5&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h5&gt;&lt;h6&gt;H6&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;h6&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#h6&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h6&gt;&lt;h2&gt;Emphasis&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;emphasis&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#emphasis&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;em&gt;Italic&lt;/em&gt;
+&lt;strong&gt;Bold&lt;/strong&gt;
+&lt;em&gt;&lt;strong&gt;Bold and Italic&lt;/strong&gt;&lt;/em&gt;
+&lt;del&gt;Strikethrough&lt;/del&gt;&lt;/p&gt;
+&lt;h2&gt;Lists&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;lists&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#lists&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3&gt;Unordered&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;unordered&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#unordered&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Item 1&lt;/li&gt;
+&lt;li&gt;Item 2
+&lt;ul&gt;
+&lt;li&gt;Subitem 2.1&lt;/li&gt;
+&lt;li&gt;Subitem 2.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Ordered&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;ordered&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#ordered&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;Links&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;links&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#links&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;a href=&#34;https://www.example.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Link text&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;Images&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;images&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#images&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://example.com/image.jpg&#34; alt=&#34;Alt text&#34; loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Blockquotes&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;blockquotes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#blockquotes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;blockquote&gt;
+  &lt;p&gt;This is a blockquote.
+It can span multiple lines.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;Code&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;code&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#code&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Inline code: &lt;code&gt;code&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;div class=&#34;hextra-code-block hx-relative hx-mt-6 first:hx-mt-0 hx-group/code&#34;&gt;
+
+&lt;div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;def&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;hello_world&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;():&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;nb&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&#34;hextra-code-copy-btn-container hx-opacity-0 hx-transition group-hover/code:hx-opacity-100 hx-flex hx-gap-1 hx-absolute hx-m-[11px] hx-right-0 hx-top-0&#34;&gt;
+  &lt;button
+    class=&#34;hextra-code-copy-btn hx-group/copybtn hx-transition-all active:hx-opacity-50 hx-bg-primary-700/5 hx-border hx-border-black/5 hx-text-gray-600 hover:hx-text-gray-900 hx-rounded-md hx-p-1.5 dark:hx-bg-primary-300/10 dark:hx-border-white/10 dark:hx-text-gray-400 dark:hover:hx-text-gray-50&#34;
+    title=&#34;Copy code&#34;
+  &gt;
+    &lt;div class=&#34;copy-icon group-[.copied]/copybtn:hx-hidden hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+    &lt;div class=&#34;success-icon hx-hidden group-[.copied]/copybtn:hx-block hx-pointer-events-none hx-h-4 hx-w-4&#34;&gt;&lt;/div&gt;
+  &lt;/button&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h2&gt;Horizontal Rule&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;horizontal-rule&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#horizontal-rule&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;hr&gt;
+&lt;h2&gt;Tables&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;tables&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#tables&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Header 1&lt;/th&gt;
+          &lt;th&gt;Header 2&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Cell 1&lt;/td&gt;
+          &lt;td&gt;Cell 2&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Cell 3&lt;/td&gt;
+          &lt;td&gt;Cell 4&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;Task Lists&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;task-lists&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#task-lists&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Completed task&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Uncompleted task&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Footnotes&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;footnotes&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#footnotes&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Here&amp;rsquo;s a sentence with a footnote. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;h2&gt;Escaping Characters&lt;span class=&#34;hx-absolute -hx-mt-20&#34; id=&#34;escaping-characters&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#escaping-characters&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;*This text is surrounded by asterisks but not italic*&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;This is the footnote.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,10 @@
+params:
+  navbar:
+    displayTitle: false
+    displayLogo: true
+    logo:
+      path: images/lister-logo.svg
+      dark: images/lister-logo-black.svg
+      link: /testerpester
+      width: 40
+      height: 20

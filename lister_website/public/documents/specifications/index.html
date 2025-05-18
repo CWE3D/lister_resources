@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en"><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon shortcut" href="/favicon.ico" sizes="32x32" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon-dark.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
+<link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+<link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+<link fetchpriority="low" href="/site.webmanifest" rel="manifest" />
+<title>Specifications – Lister 3D Printers</title>
+  <meta name="description" content="CWE3D Lister 3D Printer SpecificationsGeneral Specifications Specification Value Weight 23kg Default Max Acceleration 2500 mm/s² Default Max Velocity 300 mm/s Printable Area 250mm x 250mm x 240mm Dimensions Height: 577mm
+Width: 460mm
+Length: 520mm Frame and Construction Frame Type: CoreXY system Frame Material: Aluminum profile PG2020/40 Assembly: Simple assembly and disassembly Fasteners: Over 400 quality stainless steel screws (M3, M4, M5, M6) Additional Features: Anti-vibration feet Chromed steel T-nuts Open frame design for easy access and maintenance Gantry System Belt System: GT2 6mm belt drive Pulleys: GT2 idler pulley 20 teeth 14x pulley alignment system Simple belt tensioners Linear Motion: Linear Rod Bearing (8mm) LM8LUU 8mm hardened chromium steel rods Homing: Sensorless homing on all axes (X, Y, Z) Z-Axis System Z-Axis Motion: Dual ballscrew system 2x Ballscrew bearing SFU 1204 (12mm w/ 4mm pitch) 350mm long stainless steel Z-Axis Support: 4x 12mm hardened chromium linear rod system 5-6mm thickness base bed plate connecting 12mm rod brackets to bed Coupler: 5mm to 8mm aluminum flexible clamp coupler with single roller bearing pivot Additional Features: Stepper supported Z thrust bearings decreasing stress from stepper bearings Print Bed Bed Size: 250mm x 250mm x 240mm (h) Bed Material: 300mm x 300mm Super flat Garolite F4 base Bed Construction: 300mm x 300mm bed insulation PG2020 construction 1.5mm aluminum heat spreader 260 x 260mm insulation Bed Flatness: Can be as flat as 0.14mm on lowest and highest point Heating: 250W 250mm x 250mm isolated silicone heat pad 80°C max heated bed surface (magnet starts degrading over 85°C) Print Surface: PEI flexible bed printing surface with rough texture Bed Leveling: 8mm bed level induction probe 4x aluminum level adjustment wheels with Silicone Heater Bed Standoff Center level adjustment wheel Auto bed leveling with bed mesh measuring and dynamic bed probing Extruder and Hot End Extruder: Bigtreetech H2 V2S Direct Drive Extruder Extrusion Method: Dual Gear Extrusion Maximum Printing Temperature: 270°C (Upgradable) Weight: 198g (excluding wiring) Maximum Extrusion Force: 770 N (approximately 7.5 kg) Filament Diameter and Tolerance: 1.75 ± 0.05 mm Extrusion Speed: Up to 600 mm³/min or 10 mm³/s (depending on filament type) See more detail Nozzle: 0.5mm Hardened Steel Nozzle We recently decided to make our current previous 0.6mm nozzle default to 0.5mm Please see specifics on print speeds and nozzle here Cooling: 5015 24V part cooling blower Electrical System Controller Board: Bigtreetech SKR Pro V1.2 32-bit ARM Cortex-M4 processor with 256KB of RAM TMC 2209 silent stepper drivers Multiple safeguard measures 16 GB SD card Power Supply: 24V Mean Well power supply (350W) LRS-350-24 Stepper Motors: 4x Wantai Nema 17 (42BYGHM810) 0.9 degree 2.4A Raspberry Pi: 3B&#43;/4/5 1GB/2GB version with 32GB SD Card Additional Components: 24V to 5V 5A stepdown for Raspberry Pi Fotek SSR-25 DA Solid State Relay AC/DC for 250W bed heating pad 3mm Aluminum electrical panel backplate 450mm x 410mm 48 point terminal block 600V 15A patch panel IEC Socket &#43; Switch (With replaceable fuse cartridge) LED print surface spotlight Wiring: Full wiring solder connections, hidden for aesthetics Electrical Trunking: Fully enclosed system for wire organization Software and Control Operating System: RatOS (Raspberry Pi based) Firmware: Klipper with Mainsail interface Lister Plugins: Lister printables (all updated printer parts) Lister config (all firmware and macros) Lister control (numpad shortcut control) User Interface: Web interface and Mobile/Tablet interface Filament Compatibility Optimized for filaments that: Don’t require a heated chamber Are less prone to warping Don’t need bed temperatures exceeding 90°C Compatible Filaments: PLA variants (Standard, PLA&#43;, filled PLAs, specialty PLAs) PETG and its variants (including CF and GF reinforced) TPU/TPE (up to 95A hardness) PVA (for soluble supports) PCTG Some low-warp nylon blends Various specialty and bio-based filaments Additional Features Filament Runout Sensor: Included Sensorless Homing: Full axis XYZ homing without physical end-stops Upgradability: Frame designed to accommodate future enhancements Open Source: Full access to CAD files, firmware, and documentation Noise Level: Quiet operation with noticeable but elegant stepper coil humming Printer Components Materials eSun ePLA-ST for most parts eSun PETG for black back panels Bamboo Labs PETG-CF for brackets eSun TPU 95A for anti-vibration feet This comprehensive specification list covers all the key aspects of the CWE3D Lister 3D Printer, highlighting its unique features and capabilities." /><link rel="canonical" href="http://localhost:1313/documents/specifications/" itemprop="url" />
+
+<meta property="og:title" content="Specifications" />
+<meta property="og:description" content="CWE3D Lister 3D Printer SpecificationsGeneral Specifications
+    
+  
+      
+          Specification
+          Value
+      
+  
+  
+      
+          Weight
+          23kg
+      
+      
+          Default Max Acceleration
+          2500 mm/s²
+      
+      
+          Default Max Velocity
+          300 mm/s
+      
+      
+          Printable Area
+          250mm x 250mm x 240mm
+      
+      
+          Dimensions
+          Height: 577mmWidth: 460mmLength: 520mm
+      
+  
+
+Frame and Construction
+    
+Frame Type: CoreXY system
+Frame Material: Aluminum profile PG2020/40
+Assembly: Simple assembly and disassembly
+Fasteners: Over 400 quality stainless steel screws (M3, M4, M5, M6)
+Additional Features:
+
+Anti-vibration feet
+Chromed steel T-nuts
+Open frame design for easy access and maintenance
+
+
+
+Gantry System
+    
+Belt System: GT2 6mm belt drive
+Pulleys: GT2 idler pulley 20 teeth
+
+14x pulley alignment system
+Simple belt tensioners
+
+
+Linear Motion:
+
+Linear Rod Bearing (8mm) LM8LUU
+8mm hardened chromium steel rods
+
+
+Homing: Sensorless homing on all axes (X, Y, Z)
+
+Z-Axis System
+    
+Z-Axis Motion: Dual ballscrew system
+
+2x Ballscrew bearing SFU 1204 (12mm w/ 4mm pitch)
+350mm long stainless steel
+
+
+Z-Axis Support:
+
+4x 12mm hardened chromium linear rod system
+5-6mm thickness base bed plate connecting 12mm rod brackets to bed
+
+
+Coupler: 5mm to 8mm aluminum flexible clamp coupler with single roller bearing pivot
+Additional Features:
+
+Stepper supported Z thrust bearings decreasing stress from stepper bearings
+
+
+
+Print Bed
+    
+Bed Size: 250mm x 250mm x 240mm (h)
+Bed Material: 300mm x 300mm Super flat Garolite F4 base
+Bed Construction:
+
+300mm x 300mm bed insulation
+PG2020 construction
+1.5mm aluminum heat spreader
+260 x 260mm insulation
+
+
+Bed Flatness: Can be as flat as 0.14mm on lowest and highest point
+Heating:
+
+250W 250mm x 250mm isolated silicone heat pad
+80°C max heated bed surface (magnet starts degrading over 85°C)
+
+
+Print Surface: PEI flexible bed printing surface with rough texture
+Bed Leveling:
+
+8mm bed level induction probe
+4x aluminum level adjustment wheels with Silicone Heater Bed Standoff
+Center level adjustment wheel
+Auto bed leveling with bed mesh measuring and dynamic bed probing
+
+
+
+Extruder and Hot End
+    
+Extruder: Bigtreetech H2 V2S Direct Drive Extruder
+
+Extrusion Method: Dual Gear Extrusion
+Maximum Printing Temperature: 270°C (Upgradable)
+Weight: 198g (excluding wiring)
+Maximum Extrusion Force: 770 N (approximately 7.5 kg)
+Filament Diameter and Tolerance: 1.75 ± 0.05 mm
+Extrusion Speed: Up to 600 mm³/min or 10 mm³/s (depending on filament type)
+
+See more detail
+
+
+
+
+Nozzle: 0.5mm Hardened Steel Nozzle
+
+We recently decided to make our current previous 0.6mm nozzle default to 0.5mm
+Please see specifics on print speeds and nozzle here
+
+
+Cooling: 5015 24V part cooling blower
+
+Electrical System
+    
+Controller Board: Bigtreetech SKR Pro V1.2
+
+32-bit ARM Cortex-M4 processor with 256KB of RAM
+TMC 2209 silent stepper drivers
+Multiple safeguard measures
+16 GB SD card
+
+
+Power Supply: 24V Mean Well power supply (350W) LRS-350-24
+Stepper Motors: 4x Wantai Nema 17 (42BYGHM810) 0.9 degree 2.4A
+Raspberry Pi: 3B&#43;/4/5 1GB/2GB version with 32GB SD Card
+Additional Components:
+
+24V to 5V 5A stepdown for Raspberry Pi
+Fotek SSR-25 DA Solid State Relay AC/DC for 250W bed heating pad
+3mm Aluminum electrical panel backplate 450mm x 410mm
+48 point terminal block 600V 15A patch panel
+IEC Socket &#43; Switch (With replaceable fuse cartridge)
+LED print surface spotlight
+
+
+Wiring: Full wiring solder connections, hidden for aesthetics
+Electrical Trunking: Fully enclosed system for wire organization
+
+Software and Control
+    
+Operating System: RatOS (Raspberry Pi based)
+Firmware: Klipper with Mainsail interface
+Lister Plugins:
+
+Lister printables (all updated printer parts)
+Lister config (all firmware and macros)
+Lister control (numpad shortcut control)
+
+
+User Interface: Web interface and Mobile/Tablet interface
+
+Filament Compatibility
+    
+Optimized for filaments that:
+
+Don&rsquo;t require a heated chamber
+Are less prone to warping
+Don&rsquo;t need bed temperatures exceeding 90°C
+
+
+
+Compatible Filaments:
+    
+PLA variants (Standard, PLA&#43;, filled PLAs, specialty PLAs)
+PETG and its variants (including CF and GF reinforced)
+TPU/TPE (up to 95A hardness)
+PVA (for soluble supports)
+PCTG
+Some low-warp nylon blends
+Various specialty and bio-based filaments
+
+Additional Features
+    
+Filament Runout Sensor: Included
+Sensorless Homing: Full axis XYZ homing without physical end-stops
+Upgradability: Frame designed to accommodate future enhancements
+Open Source: Full access to CAD files, firmware, and documentation
+Noise Level: Quiet operation with noticeable but elegant stepper coil humming
+
+Printer Components Materials
+    
+eSun ePLA-ST for most parts
+eSun PETG for black back panels
+Bamboo Labs PETG-CF for brackets
+eSun TPU 95A for anti-vibration feet
+
+This comprehensive specification list covers all the key aspects of the CWE3D Lister 3D Printer, highlighting its unique features and capabilities." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/documents/specifications/" /><meta property="article:section" content="documents" />
+
+
+
+  <meta itemprop="name" content="Specifications">
+  <meta itemprop="description" content="CWE3D Lister 3D Printer SpecificationsGeneral Specifications Specification Value Weight 23kg Default Max Acceleration 2500 mm/s² Default Max Velocity 300 mm/s Printable Area 250mm x 250mm x 240mm Dimensions Height: 577mm
+Width: 460mm
+Length: 520mm Frame and Construction Frame Type: CoreXY system Frame Material: Aluminum profile PG2020/40 Assembly: Simple assembly and disassembly Fasteners: Over 400 quality stainless steel screws (M3, M4, M5, M6) Additional Features: Anti-vibration feet Chromed steel T-nuts Open frame design for easy access and maintenance Gantry System Belt System: GT2 6mm belt drive Pulleys: GT2 idler pulley 20 teeth 14x pulley alignment system Simple belt tensioners Linear Motion: Linear Rod Bearing (8mm) LM8LUU 8mm hardened chromium steel rods Homing: Sensorless homing on all axes (X, Y, Z) Z-Axis System Z-Axis Motion: Dual ballscrew system 2x Ballscrew bearing SFU 1204 (12mm w/ 4mm pitch) 350mm long stainless steel Z-Axis Support: 4x 12mm hardened chromium linear rod system 5-6mm thickness base bed plate connecting 12mm rod brackets to bed Coupler: 5mm to 8mm aluminum flexible clamp coupler with single roller bearing pivot Additional Features: Stepper supported Z thrust bearings decreasing stress from stepper bearings Print Bed Bed Size: 250mm x 250mm x 240mm (h) Bed Material: 300mm x 300mm Super flat Garolite F4 base Bed Construction: 300mm x 300mm bed insulation PG2020 construction 1.5mm aluminum heat spreader 260 x 260mm insulation Bed Flatness: Can be as flat as 0.14mm on lowest and highest point Heating: 250W 250mm x 250mm isolated silicone heat pad 80°C max heated bed surface (magnet starts degrading over 85°C) Print Surface: PEI flexible bed printing surface with rough texture Bed Leveling: 8mm bed level induction probe 4x aluminum level adjustment wheels with Silicone Heater Bed Standoff Center level adjustment wheel Auto bed leveling with bed mesh measuring and dynamic bed probing Extruder and Hot End Extruder: Bigtreetech H2 V2S Direct Drive Extruder Extrusion Method: Dual Gear Extrusion Maximum Printing Temperature: 270°C (Upgradable) Weight: 198g (excluding wiring) Maximum Extrusion Force: 770 N (approximately 7.5 kg) Filament Diameter and Tolerance: 1.75 ± 0.05 mm Extrusion Speed: Up to 600 mm³/min or 10 mm³/s (depending on filament type) See more detail Nozzle: 0.5mm Hardened Steel Nozzle We recently decided to make our current previous 0.6mm nozzle default to 0.5mm Please see specifics on print speeds and nozzle here Cooling: 5015 24V part cooling blower Electrical System Controller Board: Bigtreetech SKR Pro V1.2 32-bit ARM Cortex-M4 processor with 256KB of RAM TMC 2209 silent stepper drivers Multiple safeguard measures 16 GB SD card Power Supply: 24V Mean Well power supply (350W) LRS-350-24 Stepper Motors: 4x Wantai Nema 17 (42BYGHM810) 0.9 degree 2.4A Raspberry Pi: 3B&#43;/4/5 1GB/2GB version with 32GB SD Card Additional Components: 24V to 5V 5A stepdown for Raspberry Pi Fotek SSR-25 DA Solid State Relay AC/DC for 250W bed heating pad 3mm Aluminum electrical panel backplate 450mm x 410mm 48 point terminal block 600V 15A patch panel IEC Socket &#43; Switch (With replaceable fuse cartridge) LED print surface spotlight Wiring: Full wiring solder connections, hidden for aesthetics Electrical Trunking: Fully enclosed system for wire organization Software and Control Operating System: RatOS (Raspberry Pi based) Firmware: Klipper with Mainsail interface Lister Plugins: Lister printables (all updated printer parts) Lister config (all firmware and macros) Lister control (numpad shortcut control) User Interface: Web interface and Mobile/Tablet interface Filament Compatibility Optimized for filaments that: Don’t require a heated chamber Are less prone to warping Don’t need bed temperatures exceeding 90°C Compatible Filaments: PLA variants (Standard, PLA&#43;, filled PLAs, specialty PLAs) PETG and its variants (including CF and GF reinforced) TPU/TPE (up to 95A hardness) PVA (for soluble supports) PCTG Some low-warp nylon blends Various specialty and bio-based filaments Additional Features Filament Runout Sensor: Included Sensorless Homing: Full axis XYZ homing without physical end-stops Upgradability: Frame designed to accommodate future enhancements Open Source: Full access to CAD files, firmware, and documentation Noise Level: Quiet operation with noticeable but elegant stepper coil humming Printer Components Materials eSun ePLA-ST for most parts eSun PETG for black back panels Bamboo Labs PETG-CF for brackets eSun TPU 95A for anti-vibration feet This comprehensive specification list covers all the key aspects of the CWE3D Lister 3D Printer, highlighting its unique features and capabilities.">
+  <meta itemprop="wordCount" content="726">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Specifications">
+  <meta name="twitter:description" content="CWE3D Lister 3D Printer SpecificationsGeneral Specifications Specification Value Weight 23kg Default Max Acceleration 2500 mm/s² Default Max Velocity 300 mm/s Printable Area 250mm x 250mm x 240mm Dimensions Height: 577mm
+Width: 460mm
+Length: 520mm Frame and Construction Frame Type: CoreXY system Frame Material: Aluminum profile PG2020/40 Assembly: Simple assembly and disassembly Fasteners: Over 400 quality stainless steel screws (M3, M4, M5, M6) Additional Features: Anti-vibration feet Chromed steel T-nuts Open frame design for easy access and maintenance Gantry System Belt System: GT2 6mm belt drive Pulleys: GT2 idler pulley 20 teeth 14x pulley alignment system Simple belt tensioners Linear Motion: Linear Rod Bearing (8mm) LM8LUU 8mm hardened chromium steel rods Homing: Sensorless homing on all axes (X, Y, Z) Z-Axis System Z-Axis Motion: Dual ballscrew system 2x Ballscrew bearing SFU 1204 (12mm w/ 4mm pitch) 350mm long stainless steel Z-Axis Support: 4x 12mm hardened chromium linear rod system 5-6mm thickness base bed plate connecting 12mm rod brackets to bed Coupler: 5mm to 8mm aluminum flexible clamp coupler with single roller bearing pivot Additional Features: Stepper supported Z thrust bearings decreasing stress from stepper bearings Print Bed Bed Size: 250mm x 250mm x 240mm (h) Bed Material: 300mm x 300mm Super flat Garolite F4 base Bed Construction: 300mm x 300mm bed insulation PG2020 construction 1.5mm aluminum heat spreader 260 x 260mm insulation Bed Flatness: Can be as flat as 0.14mm on lowest and highest point Heating: 250W 250mm x 250mm isolated silicone heat pad 80°C max heated bed surface (magnet starts degrading over 85°C) Print Surface: PEI flexible bed printing surface with rough texture Bed Leveling: 8mm bed level induction probe 4x aluminum level adjustment wheels with Silicone Heater Bed Standoff Center level adjustment wheel Auto bed leveling with bed mesh measuring and dynamic bed probing Extruder and Hot End Extruder: Bigtreetech H2 V2S Direct Drive Extruder Extrusion Method: Dual Gear Extrusion Maximum Printing Temperature: 270°C (Upgradable) Weight: 198g (excluding wiring) Maximum Extrusion Force: 770 N (approximately 7.5 kg) Filament Diameter and Tolerance: 1.75 ± 0.05 mm Extrusion Speed: Up to 600 mm³/min or 10 mm³/s (depending on filament type) See more detail Nozzle: 0.5mm Hardened Steel Nozzle We recently decided to make our current previous 0.6mm nozzle default to 0.5mm Please see specifics on print speeds and nozzle here Cooling: 5015 24V part cooling blower Electrical System Controller Board: Bigtreetech SKR Pro V1.2 32-bit ARM Cortex-M4 processor with 256KB of RAM TMC 2209 silent stepper drivers Multiple safeguard measures 16 GB SD card Power Supply: 24V Mean Well power supply (350W) LRS-350-24 Stepper Motors: 4x Wantai Nema 17 (42BYGHM810) 0.9 degree 2.4A Raspberry Pi: 3B&#43;/4/5 1GB/2GB version with 32GB SD Card Additional Components: 24V to 5V 5A stepdown for Raspberry Pi Fotek SSR-25 DA Solid State Relay AC/DC for 250W bed heating pad 3mm Aluminum electrical panel backplate 450mm x 410mm 48 point terminal block 600V 15A patch panel IEC Socket &#43; Switch (With replaceable fuse cartridge) LED print surface spotlight Wiring: Full wiring solder connections, hidden for aesthetics Electrical Trunking: Fully enclosed system for wire organization Software and Control Operating System: RatOS (Raspberry Pi based) Firmware: Klipper with Mainsail interface Lister Plugins: Lister printables (all updated printer parts) Lister config (all firmware and macros) Lister control (numpad shortcut control) User Interface: Web interface and Mobile/Tablet interface Filament Compatibility Optimized for filaments that: Don’t require a heated chamber Are less prone to warping Don’t need bed temperatures exceeding 90°C Compatible Filaments: PLA variants (Standard, PLA&#43;, filled PLAs, specialty PLAs) PETG and its variants (including CF and GF reinforced) TPU/TPE (up to 95A hardness) PVA (for soluble supports) PCTG Some low-warp nylon blends Various specialty and bio-based filaments Additional Features Filament Runout Sensor: Included Sensorless Homing: Full axis XYZ homing without physical end-stops Upgradability: Frame designed to accommodate future enhancements Open Source: Full access to CAD files, firmware, and documentation Noise Level: Quiet operation with noticeable but elegant stepper coil humming Printer Components Materials eSun ePLA-ST for most parts eSun PETG for black back panels Bamboo Labs PETG-CF for brackets eSun TPU 95A for anti-vibration feet This comprehensive specification list covers all the key aspects of the CWE3D Lister 3D Printer, highlighting its unique features and capabilities.">
+
+    <link href="/css/compiled/main.css" rel="stylesheet" />
+
+
+
+  <link href="/css/custom.css" rel="stylesheet" />
+
+
+  <script>
+     
+    const defaultTheme = 'system';
+
+    const setDarkTheme = () => {
+      document.documentElement.classList.add("dark");
+      document.documentElement.style.colorScheme = "dark";
+    }
+    const setLightTheme = () => {
+      document.documentElement.classList.remove("dark");
+      document.documentElement.style.colorScheme = "light";
+    }
+
+    if ("color-theme" in localStorage) {
+      localStorage.getItem("color-theme") === "dark" ? setDarkTheme() : setLightTheme();
+    } else {
+      defaultTheme === "dark" ? setDarkTheme() : setLightTheme();
+      if (defaultTheme === "system") {
+        window.matchMedia("(prefers-color-scheme: dark)").matches ? setDarkTheme() : setLightTheme();
+      }
+    }
+  </script>
+
+  
+</head>
+<body dir="ltr"><div class="nav-container hx-sticky hx-top-0 hx-z-20 hx-w-full hx-bg-transparent print:hx-hidden">
+  <div class="nav-container-blur hx-pointer-events-none hx-absolute hx-z-[-1] hx-h-full hx-w-full hx-bg-white dark:hx-bg-dark hx-shadow-[0_2px_4px_rgba(0,0,0,.02),0_1px_0_rgba(0,0,0,.06)] contrast-more:hx-shadow-[0_0_0_1px_#000] dark:hx-shadow-[0_-1px_0_rgba(255,255,255,.1)_inset] contrast-more:dark:hx-shadow-[0_0_0_1px_#fff]"></div>
+
+  <nav class="hx-mx-auto hx-flex hx-items-center hx-justify-end hx-gap-2 hx-h-16 hx-px-6 hx-max-w-[90rem]">
+    <a class="hx-flex hx-items-center hover:hx-opacity-75 ltr:hx-mr-auto rtl:hx-ml-auto" href="/">
+        <img class="hx-block dark:hx-hidden" src="/images/lister_logo_light.png" alt="Lister 3D Printers" height="20" width="200" />
+        <img class="hx-hidden dark:hx-block" src="/images/lister_logo_dark.png" alt="Lister 3D Printers" height="20" width="200" />
+    </a><a
+            title="Documentation"
+            href="/docs"
+            
+            class="hx-text-sm contrast-more:hx-text-gray-700 contrast-more:dark:hx-text-gray-100 hx-relative -hx-ml-2 hx-hidden hx-whitespace-nowrap hx-p-2 md:hx-inline-block hx-text-gray-600 hover:hx-text-gray-800 dark:hx-text-gray-400 dark:hover:hx-text-gray-200"
+          >
+            <span class="hx-text-center">Documentation</span>
+          </a><a
+            title="About"
+            href="/about"
+            
+            class="hx-text-sm contrast-more:hx-text-gray-700 contrast-more:dark:hx-text-gray-100 hx-relative -hx-ml-2 hx-hidden hx-whitespace-nowrap hx-p-2 md:hx-inline-block hx-text-gray-600 hover:hx-text-gray-800 dark:hx-text-gray-400 dark:hover:hx-text-gray-200"
+          >
+            <span class="hx-text-center">About</span>
+          </a><a
+            title="Contact ↗"
+            href="https://github.com/imfing"
+            target="_blank" rel="noreferrer"
+            class="hx-text-sm contrast-more:hx-text-gray-700 contrast-more:dark:hx-text-gray-100 hx-relative -hx-ml-2 hx-hidden hx-whitespace-nowrap hx-p-2 md:hx-inline-block hx-text-gray-600 hover:hx-text-gray-800 dark:hx-text-gray-400 dark:hover:hx-text-gray-200"
+          >
+            <span class="hx-text-center">Contact ↗</span>
+          </a><div class="search-wrapper hx-relative md:hx-w-64">
+  <div class="hx-relative hx-flex hx-items-center hx-text-gray-900 contrast-more:hx-text-gray-800 dark:hx-text-gray-300 contrast-more:dark:hx-text-gray-300">
+    <input
+      placeholder="Search..."
+      class="search-input hx-block hx-w-full hx-appearance-none hx-rounded-lg hx-px-3 hx-py-2 hx-transition-colors hx-text-base hx-leading-tight md:hx-text-sm hx-bg-black/[.05] dark:hx-bg-gray-50/10 focus:hx-bg-white dark:focus:hx-bg-dark placeholder:hx-text-gray-500 dark:placeholder:hx-text-gray-400 contrast-more:hx-border contrast-more:hx-border-current"
+      type="search"
+      value=""
+      spellcheck="false"
+    />
+    <kbd
+      class="hx-absolute hx-my-1.5 hx-select-none ltr:hx-right-1.5 rtl:hx-left-1.5 hx-h-5 hx-rounded hx-bg-white hx-px-1.5 hx-font-mono hx-text-[10px] hx-font-medium hx-text-gray-500 hx-border dark:hx-border-gray-100/20 dark:hx-bg-dark/50 contrast-more:hx-border-current contrast-more:hx-text-current contrast-more:dark:hx-border-current hx-items-center hx-gap-1 hx-transition-opacity hx-pointer-events-none hx-hidden sm:hx-flex"
+    >
+      CTRL K
+    </kbd>
+  </div>
+
+  <div>
+    <ul
+      class="search-results hextra-scrollbar hx-hidden hx-border hx-border-gray-200 hx-bg-white hx-text-gray-100 dark:hx-border-neutral-800 dark:hx-bg-neutral-900 hx-absolute hx-top-full hx-z-20 hx-mt-2 hx-overflow-auto hx-overscroll-contain hx-rounded-xl hx-py-2.5 hx-shadow-xl hx-max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] md:hx-max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx-inset-x-0 ltr:md:hx-left-auto rtl:md:hx-right-auto contrast-more:hx-border contrast-more:hx-border-gray-900 contrast-more:dark:hx-border-gray-50 hx-w-screen hx-min-h-[100px] hx-max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      style="transition: max-height 0.2s ease 0s;"
+    ></ul>
+  </div>
+</div>
+
+          <a class="hx-p-2 hx-text-current" target="_blank" rel="noreferrer" href="https://github.com/imfing/hextra-starter-template" title="GitHub"><svg height=24 fill="currentColor" viewBox="3 3 18 18">
+  <path d="M12 3C7.0275 3 3 7.12937 3 12.2276C3 16.3109 5.57625 19.7597 9.15374 20.9824C9.60374 21.0631 9.77249 20.7863 9.77249 20.5441C9.77249 20.3249 9.76125 19.5982 9.76125 18.8254C7.5 19.2522 6.915 18.2602 6.735 17.7412C6.63375 17.4759 6.19499 16.6569 5.8125 16.4378C5.4975 16.2647 5.0475 15.838 5.80124 15.8264C6.51 15.8149 7.01625 16.4954 7.18499 16.7723C7.99499 18.1679 9.28875 17.7758 9.80625 17.5335C9.885 16.9337 10.1212 16.53 10.38 16.2993C8.3775 16.0687 6.285 15.2728 6.285 11.7432C6.285 10.7397 6.63375 9.9092 7.20749 9.26326C7.1175 9.03257 6.8025 8.08674 7.2975 6.81794C7.2975 6.81794 8.05125 6.57571 9.77249 7.76377C10.4925 7.55615 11.2575 7.45234 12.0225 7.45234C12.7875 7.45234 13.5525 7.55615 14.2725 7.76377C15.9937 6.56418 16.7475 6.81794 16.7475 6.81794C17.2424 8.08674 16.9275 9.03257 16.8375 9.26326C17.4113 9.9092 17.76 10.7281 17.76 11.7432C17.76 15.2843 15.6563 16.0687 13.6537 16.2993C13.98 16.5877 14.2613 17.1414 14.2613 18.0065C14.2613 19.2407 14.25 20.2326 14.25 20.5441C14.25 20.7863 14.4188 21.0746 14.8688 20.9824C16.6554 20.364 18.2079 19.1866 19.3078 17.6162C20.4077 16.0457 20.9995 14.1611 21 12.2276C21 7.12937 16.9725 3 12 3Z"></path>
+</svg>
+<span class="hx-sr-only">GitHub</span>
+          </a><button type="button" aria-label="Menu" class="hamburger-menu -hx-mr-2 hx-rounded hx-p-2 active:hx-bg-gray-400/20 md:hx-hidden"><svg height=24 fill="none" viewBox="0 0 24 24" stroke="currentColor"><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8H20"></path></g><g><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16H20"></path></g></svg></button>
+  </nav>
+</div>
+
+  <div class='hx-mx-auto hx-flex hx-max-w-screen-xl'>
+    <div class="mobile-menu-overlay [transition:background-color_1.5s_ease] hx-fixed hx-inset-0 hx-z-10 hx-bg-black/80 dark:hx-bg-black/60 hx-hidden"></div>
+<aside class="sidebar-container hx-flex hx-flex-col print:hx-hidden md:hx-top-16 md:hx-shrink-0 md:hx-w-64 md:hx-self-start max-md:[transform:translate3d(0,-100%,0)] md:hx-sticky">
+  
+  <div class="hx-px-4 hx-pt-4 md:hx-hidden">
+    <div class="search-wrapper hx-relative md:hx-w-64">
+  <div class="hx-relative hx-flex hx-items-center hx-text-gray-900 contrast-more:hx-text-gray-800 dark:hx-text-gray-300 contrast-more:dark:hx-text-gray-300">
+    <input
+      placeholder="Search..."
+      class="search-input hx-block hx-w-full hx-appearance-none hx-rounded-lg hx-px-3 hx-py-2 hx-transition-colors hx-text-base hx-leading-tight md:hx-text-sm hx-bg-black/[.05] dark:hx-bg-gray-50/10 focus:hx-bg-white dark:focus:hx-bg-dark placeholder:hx-text-gray-500 dark:placeholder:hx-text-gray-400 contrast-more:hx-border contrast-more:hx-border-current"
+      type="search"
+      value=""
+      spellcheck="false"
+    />
+    <kbd
+      class="hx-absolute hx-my-1.5 hx-select-none ltr:hx-right-1.5 rtl:hx-left-1.5 hx-h-5 hx-rounded hx-bg-white hx-px-1.5 hx-font-mono hx-text-[10px] hx-font-medium hx-text-gray-500 hx-border dark:hx-border-gray-100/20 dark:hx-bg-dark/50 contrast-more:hx-border-current contrast-more:hx-text-current contrast-more:dark:hx-border-current hx-items-center hx-gap-1 hx-transition-opacity hx-pointer-events-none hx-hidden sm:hx-flex"
+    >
+      CTRL K
+    </kbd>
+  </div>
+
+  <div>
+    <ul
+      class="search-results hextra-scrollbar hx-hidden hx-border hx-border-gray-200 hx-bg-white hx-text-gray-100 dark:hx-border-neutral-800 dark:hx-bg-neutral-900 hx-absolute hx-top-full hx-z-20 hx-mt-2 hx-overflow-auto hx-overscroll-contain hx-rounded-xl hx-py-2.5 hx-shadow-xl hx-max-h-[min(calc(50vh-11rem-env(safe-area-inset-bottom)),400px)] md:hx-max-h-[min(calc(100vh-5rem-env(safe-area-inset-bottom)),400px)] hx-inset-x-0 ltr:md:hx-left-auto rtl:md:hx-right-auto contrast-more:hx-border contrast-more:hx-border-gray-900 contrast-more:dark:hx-border-gray-50 hx-w-screen hx-min-h-[100px] hx-max-w-[min(calc(100vw-2rem),calc(100%+20rem))]"
+      style="transition: max-height 0.2s ease 0s;"
+    ></ul>
+  </div>
+</div>
+
+  </div>
+  <div class="hextra-scrollbar hx-overflow-y-auto hx-overflow-x-hidden hx-p-4 hx-grow md:hx-h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
+    <ul class="hx-flex hx-flex-col hx-gap-1 md:hx-hidden">
+      
+      
+          <li class="open"><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/"
+    
+  >Documentation
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
+    </a><div class="ltr:hx-pr-0 hx-overflow-hidden">
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/introduction/"
+    
+  >Introduction
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/getting_started/"
+    
+  >Getting Started
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col open"><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500"
+    href="/documents/specifications/"
+    
+  >Specifications
+    </a>
+  
+    <ul class='hx-flex hx-flex-col hx-gap-1 hx-relative before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] dark:before:hx-bg-neutral-800 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-pr-3 rtl:before:hx-right-0 ltr:hx-ml-3 rtl:hx-mr-3'><li>
+              <a
+                href="#general-specifications"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >General Specifications</a>
+            </li>
+          <li>
+              <a
+                href="#frame-and-construction"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Frame and Construction</a>
+            </li>
+          <li>
+              <a
+                href="#gantry-system"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Gantry System</a>
+            </li>
+          <li>
+              <a
+                href="#z-axis-system"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Z-Axis System</a>
+            </li>
+          <li>
+              <a
+                href="#print-bed"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Print Bed</a>
+            </li>
+          <li>
+              <a
+                href="#extruder-and-hot-end"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Extruder and Hot End</a>
+            </li>
+          <li>
+              <a
+                href="#electrical-system"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Electrical System</a>
+            </li>
+          <li>
+              <a
+                href="#software-and-control"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Software and Control</a>
+            </li>
+          <li>
+              <a
+                href="#filament-compatibility"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Filament Compatibility</a>
+            </li>
+          <li>
+              <a
+                href="#additional-features"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Additional Features</a>
+            </li>
+          <li>
+              <a
+                href="#printer-components-materials"
+                class="hx-flex hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [word-break:break-word] hx-cursor-pointer [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] contrast-more:hx-border hx-gap-2 before:hx-opacity-25 before:hx-content-['#'] hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:hx-text-gray-900 contrast-more:dark:hx-text-gray-50 contrast-more:hx-border-transparent contrast-more:hover:hx-border-gray-900 contrast-more:dark:hover:hx-border-gray-50"
+              >Printer Components Materials</a>
+            </li>
+          </ul>
+  
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/markdown/"
+    
+  >Markdown
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/05mm_nozzle/"
+    
+  >0.5mm Nozzle Guide
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/h2_extruder/"
+    
+  >H2 Extruder
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/hygroscopic/"
+    
+  >Hygroscopic Materials Guide
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/key_differences/"
+    
+  >Key Differences
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/klipper/"
+    
+  >Klipper Setup
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/moonraker/"
+    
+  >Moonraker Configuration
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/parts_layout/"
+    
+  >Printable Parts Directory
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/terminology/"
+    
+  >Terminology
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/trouble_shooting/"
+    
+  >Troubleshooting
+    </a>
+              
+            </li></ul>
+      </div></li>
+          <li class=""><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/about/"
+    
+  >About
+    </a></li>
+    </ul>
+
+    <ul class="hx-flex hx-flex-col hx-gap-1 max-md:hx-hidden">
+        
+          <li class="open"><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/"
+    
+  >Documentation
+        <span class="hextra-sidebar-collapsible-button"><svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="hx-h-[18px] hx-min-w-[18px] hx-rounded-sm hx-p-0.5 hover:hx-bg-gray-800/5 dark:hover:hx-bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="hx-origin-center hx-transition-transform rtl:-hx-rotate-180"></path></svg></span>
+    </a><div class="ltr:hx-pr-0 hx-overflow-hidden">
+        <ul class='hx-relative hx-flex hx-flex-col hx-gap-1 before:hx-absolute before:hx-inset-y-1 before:hx-w-px before:hx-bg-gray-200 before:hx-content-[""] ltr:hx-ml-3 ltr:hx-pl-3 ltr:before:hx-left-0 rtl:hx-mr-3 rtl:hx-pr-3 rtl:before:hx-right-0 dark:before:hx-bg-neutral-800'><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/introduction/"
+    
+  >Introduction
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/getting_started/"
+    
+  >Getting Started
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col open"><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      sidebar-active-item hx-bg-primary-100 hx-font-semibold hx-text-primary-800 contrast-more:hx-border contrast-more:hx-border-primary-500 dark:hx-bg-primary-400/10 dark:hx-text-primary-600 contrast-more:dark:hx-border-primary-500"
+    href="/documents/specifications/"
+    
+  >Specifications
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/markdown/"
+    
+  >Markdown
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/05mm_nozzle/"
+    
+  >0.5mm Nozzle Guide
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/h2_extruder/"
+    
+  >H2 Extruder
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/hygroscopic/"
+    
+  >Hygroscopic Materials Guide
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/key_differences/"
+    
+  >Key Differences
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/klipper/"
+    
+  >Klipper Setup
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/moonraker/"
+    
+  >Moonraker Configuration
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/parts_layout/"
+    
+  >Printable Parts Directory
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/terminology/"
+    
+  >Terminology
+    </a>
+              
+            </li><li class="hx-flex hx-flex-col "><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/documents/trouble_shooting/"
+    
+  >Troubleshooting
+    </a>
+              
+            </li></ul>
+      </div></li>
+          <li class=""><a
+    class="hx-flex hx-items-center hx-justify-between hx-gap-2 hx-cursor-pointer hx-rounded hx-px-2 hx-py-1.5 hx-text-sm hx-transition-colors [-webkit-tap-highlight-color:transparent] [-webkit-touch-callout:none] [word-break:break-word]
+      hx-text-gray-500 hover:hx-bg-gray-100 hover:hx-text-gray-900 contrast-more:hx-border contrast-more:hx-border-transparent contrast-more:hx-text-gray-900 contrast-more:hover:hx-border-gray-900 dark:hx-text-neutral-400 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50 contrast-more:dark:hx-text-gray-50 contrast-more:dark:hover:hx-border-gray-50"
+    href="/about/"
+    
+  >About
+    </a></li>
+        
+      </ul>
+    </div>
+  
+  
+    <div class="  hx-sticky hx-bottom-0 hx-bg-white dark:hx-bg-dark hx-mx-4 hx-py-4 hx-shadow-[0_-12px_16px_#fff] hx-flex hx-items-center hx-gap-2 dark:hx-border-neutral-800 dark:hx-shadow-[0_-12px_16px_#111] contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-shadow-none hx-border-t" data-toggle-animation="show"><div class="hx-flex hx-grow hx-flex-col"><button
+  title="Change theme"
+  data-theme="light"
+  class="theme-toggle hx-group hx-h-7 hx-rounded-md hx-px-2 hx-text-left hx-text-xs hx-font-medium hx-text-gray-600 hx-transition-colors dark:hx-text-gray-400 hover:hx-bg-gray-100 hover:hx-text-gray-900 dark:hover:hx-bg-primary-100/5 dark:hover:hx-text-gray-50"
+  type="button"
+  aria-label="Change theme"
+>
+  <div class="hx-flex hx-items-center hx-gap-2 hx-capitalize"><svg height=12 class="group-data-[theme=light]:hx-hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg><span class="group-data-[theme=light]:hx-hidden">Light</span><svg height=12 class="group-data-[theme=dark]:hx-hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/></svg><span class="group-data-[theme=dark]:hx-hidden">Dark</span></div>
+</button>
+</div></div></aside>
+    
+<nav class="hextra-toc hx-order-last hx-hidden hx-w-64 hx-shrink-0 xl:hx-block print:hx-hidden hx-px-4" aria-label="table of contents">
+    <div class="hextra-scrollbar hx-sticky hx-top-16 hx-overflow-y-auto hx-pr-4 hx-pt-6 hx-text-sm [hyphens:auto] hx-max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] ltr:hx--mr-4 rtl:hx--ml-4"><p class="hx-mb-4 hx-font-semibold hx-tracking-tight">On this page</p><ul>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#general-specifications">General Specifications
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#frame-and-construction">Frame and Construction
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#gantry-system">Gantry System
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#z-axis-system">Z-Axis System
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#print-bed">Print Bed
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#extruder-and-hot-end">Extruder and Hot End
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#electrical-system">Electrical System
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#software-and-control">Software and Control
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#filament-compatibility">Filament Compatibility
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="ltr:hx-pl-4 rtl:hx-pr-4 hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#compatible-filaments">Compatible Filaments:
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#additional-features">Additional Features
+        </a>
+      </li>
+      <li class="hx-my-2 hx-scroll-my-6 hx-scroll-py-6">
+        <a class="hx-font-semibold hx-inline-block hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-300 contrast-more:hx-text-gray-900 contrast-more:hx-underline contrast-more:dark:hx-text-gray-50 hx-w-full hx-break-words" href="#printer-components-materials">Printer Components Materials
+        </a>
+      </li></ul>
+      <div class="hx-mt-8 hx-border-t hx-bg-white hx-pt-8 hx-shadow-[0_-12px_16px_white] dark:hx-bg-dark dark:hx-shadow-[0_-12px_16px_#111] hx-sticky hx-bottom-0 hx-flex hx-flex-col hx-items-start hx-gap-2 hx-pb-8 dark:hx-border-neutral-800 contrast-more:hx-border-t contrast-more:hx-border-neutral-400 contrast-more:hx-shadow-none contrast-more:dark:hx-border-neutral-400"><a class="hx-text-xs hx-font-medium hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-100 contrast-more:hx-text-gray-800 contrast-more:dark:hx-text-gray-50" href="https://github.com/imfing/hextra-starter-template/edit/main/content/documents/specifications.md" target="_blank" rel="noreferrer">Edit this page on GitHub →</a>
+        <button aria-hidden="true" id="backToTop" onClick="scrollUp();" class="hx-transition-all hx-duration-75 hx-opacity-0 hx-text-xs hx-font-medium hx-text-gray-500 hover:hx-text-gray-900 dark:hx-text-gray-400 dark:hover:hx-text-gray-100 contrast-more:hx-text-gray-800 contrast-more:dark:hx-text-gray-50">
+          <span>Scroll to top</span>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hx-inline ltr:hx-ml-1 rtl:hx-mr-1 hx-h-3.5 hx-w-3.5 hx-border hx-rounded-full hx-border-gray-500 hover:hx-border-gray-900 dark:hx-border-gray-400 dark:hover:hx-border-gray-100 contrast-more:hx-border-gray-800 contrast-more:dark:hx-border-gray-50">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+    <article class="hx-w-full hx-break-words hx-flex hx-min-h-[calc(100vh-var(--navbar-height))] hx-min-w-0 hx-justify-center hx-pb-8 hx-pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main class="hx-w-full hx-min-w-0 hx-max-w-6xl hx-px-6 hx-pt-4 md:hx-px-12">
+        
+  <div class="hx-mt-1.5 hx-flex hx-items-center hx-gap-1 hx-overflow-hidden hx-text-sm hx-text-gray-500 dark:hx-text-gray-400 contrast-more:hx-text-current">
+        <div class="hx-whitespace-nowrap hx-transition-colors hx-min-w-[24px] hx-overflow-hidden hx-text-ellipsis hover:hx-text-gray-900 dark:hover:hx-text-gray-100">
+          <a href="/documents/">Documentation</a>
+        </div><svg class="hx-w-3.5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg><div class="hx-whitespace-nowrap hx-transition-colors hx-font-medium hx-text-gray-700 contrast-more:hx-font-bold contrast-more:hx-text-current dark:hx-text-gray-100 contrast-more:dark:hx-text-current">Specifications</div>
+  </div>
+
+        <div class="content">
+          <h1>Specifications</h1>
+          <h1>CWE3D Lister 3D Printer Specifications</h1><h2>General Specifications<span class="hx-absolute -hx-mt-20" id="general-specifications"></span>
+    <a href="#general-specifications" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><table>
+  <thead>
+      <tr>
+          <th>Specification</th>
+          <th>Value</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Weight</td>
+          <td>23kg</td>
+      </tr>
+      <tr>
+          <td>Default Max Acceleration</td>
+          <td>2500 mm/s²</td>
+      </tr>
+      <tr>
+          <td>Default Max Velocity</td>
+          <td>300 mm/s</td>
+      </tr>
+      <tr>
+          <td>Printable Area</td>
+          <td>250mm x 250mm x 240mm</td>
+      </tr>
+      <tr>
+          <td>Dimensions</td>
+          <td>Height: 577mm<br>Width: 460mm<br>Length: 520mm</td>
+      </tr>
+  </tbody>
+</table>
+<h2>Frame and Construction<span class="hx-absolute -hx-mt-20" id="frame-and-construction"></span>
+    <a href="#frame-and-construction" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li><strong>Frame Type</strong>: CoreXY system</li>
+<li><strong>Frame Material</strong>: Aluminum profile PG2020/40</li>
+<li><strong>Assembly</strong>: Simple assembly and disassembly</li>
+<li><strong>Fasteners</strong>: Over 400 quality stainless steel screws (M3, M4, M5, M6)</li>
+<li><strong>Additional Features</strong>:
+<ul>
+<li>Anti-vibration feet</li>
+<li>Chromed steel T-nuts</li>
+<li>Open frame design for easy access and maintenance</li>
+</ul>
+</li>
+</ul>
+<h2>Gantry System<span class="hx-absolute -hx-mt-20" id="gantry-system"></span>
+    <a href="#gantry-system" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li><strong>Belt System</strong>: GT2 6mm belt drive</li>
+<li><strong>Pulleys</strong>: GT2 idler pulley 20 teeth
+<ul>
+<li>14x pulley alignment system</li>
+<li>Simple belt tensioners</li>
+</ul>
+</li>
+<li><strong>Linear Motion</strong>:
+<ul>
+<li>Linear Rod Bearing (8mm) LM8LUU</li>
+<li>8mm hardened chromium steel rods</li>
+</ul>
+</li>
+<li><strong>Homing</strong>: Sensorless homing on all axes (X, Y, Z)</li>
+</ul>
+<h2>Z-Axis System<span class="hx-absolute -hx-mt-20" id="z-axis-system"></span>
+    <a href="#z-axis-system" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li><strong>Z-Axis Motion</strong>: Dual ballscrew system
+<ul>
+<li>2x Ballscrew bearing SFU 1204 (12mm w/ 4mm pitch)</li>
+<li>350mm long stainless steel</li>
+</ul>
+</li>
+<li><strong>Z-Axis Support</strong>:
+<ul>
+<li>4x 12mm hardened chromium linear rod system</li>
+<li>5-6mm thickness base bed plate connecting 12mm rod brackets to bed</li>
+</ul>
+</li>
+<li><strong>Coupler</strong>: 5mm to 8mm aluminum flexible clamp coupler with single roller bearing pivot</li>
+<li><strong>Additional Features</strong>:
+<ul>
+<li>Stepper supported Z thrust bearings decreasing stress from stepper bearings</li>
+</ul>
+</li>
+</ul>
+<h2>Print Bed<span class="hx-absolute -hx-mt-20" id="print-bed"></span>
+    <a href="#print-bed" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li><strong>Bed Size</strong>: 250mm x 250mm x 240mm (h)</li>
+<li><strong>Bed Material</strong>: 300mm x 300mm Super flat Garolite F4 base</li>
+<li><strong>Bed Construction</strong>:
+<ul>
+<li>300mm x 300mm bed insulation</li>
+<li>PG2020 construction</li>
+<li>1.5mm aluminum heat spreader</li>
+<li>260 x 260mm insulation</li>
+</ul>
+</li>
+<li><strong>Bed Flatness</strong>: Can be as flat as 0.14mm on lowest and highest point</li>
+<li><strong>Heating</strong>:
+<ul>
+<li>250W 250mm x 250mm isolated silicone heat pad</li>
+<li>80°C max heated bed surface (magnet starts degrading over 85°C)</li>
+</ul>
+</li>
+<li><strong>Print Surface</strong>: PEI flexible bed printing surface with rough texture</li>
+<li><strong>Bed Leveling</strong>:
+<ul>
+<li>8mm bed level induction probe</li>
+<li>4x aluminum level adjustment wheels with Silicone Heater Bed Standoff</li>
+<li>Center level adjustment wheel</li>
+<li>Auto bed leveling with bed mesh measuring and dynamic bed probing</li>
+</ul>
+</li>
+</ul>
+<h2>Extruder and Hot End<span class="hx-absolute -hx-mt-20" id="extruder-and-hot-end"></span>
+    <a href="#extruder-and-hot-end" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li><strong>Extruder</strong>: Bigtreetech H2 V2S Direct Drive Extruder
+<ul>
+<li>Extrusion Method: Dual Gear Extrusion</li>
+<li>Maximum Printing Temperature: 270°C (Upgradable)</li>
+<li>Weight: 198g (excluding wiring)</li>
+<li>Maximum Extrusion Force: 770 N (approximately 7.5 kg)</li>
+<li>Filament Diameter and Tolerance: 1.75 ± 0.05 mm</li>
+<li>Extrusion Speed: Up to 600 mm³/min or 10 mm³/s (depending on filament type)
+<ul>
+<li><a href="h2_extruder.md" >See more detail</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Nozzle</strong>: 0.5mm Hardened Steel Nozzle
+<ul>
+<li>We recently decided to make our current previous 0.6mm nozzle default to 0.5mm</li>
+<li><a href="05mm_nozzle.md" >Please see specifics on print speeds and nozzle here</a></li>
+</ul>
+</li>
+<li><strong>Cooling</strong>: 5015 24V part cooling blower</li>
+</ul>
+<h2>Electrical System<span class="hx-absolute -hx-mt-20" id="electrical-system"></span>
+    <a href="#electrical-system" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li><strong>Controller Board</strong>: Bigtreetech SKR Pro V1.2
+<ul>
+<li>32-bit ARM Cortex-M4 processor with 256KB of RAM</li>
+<li>TMC 2209 silent stepper drivers</li>
+<li>Multiple safeguard measures</li>
+<li>16 GB SD card</li>
+</ul>
+</li>
+<li><strong>Power Supply</strong>: 24V Mean Well power supply (350W) LRS-350-24</li>
+<li><strong>Stepper Motors</strong>: 4x Wantai Nema 17 (42BYGHM810) 0.9 degree 2.4A</li>
+<li><strong>Raspberry Pi</strong>: 3B+/4/5 1GB/2GB version with 32GB SD Card</li>
+<li><strong>Additional Components</strong>:
+<ul>
+<li>24V to 5V 5A stepdown for Raspberry Pi</li>
+<li>Fotek SSR-25 DA Solid State Relay AC/DC for 250W bed heating pad</li>
+<li>3mm Aluminum electrical panel backplate 450mm x 410mm</li>
+<li>48 point terminal block 600V 15A patch panel</li>
+<li>IEC Socket + Switch (With replaceable fuse cartridge)</li>
+<li>LED print surface spotlight</li>
+</ul>
+</li>
+<li><strong>Wiring</strong>: Full wiring solder connections, hidden for aesthetics</li>
+<li><strong>Electrical Trunking</strong>: Fully enclosed system for wire organization</li>
+</ul>
+<h2>Software and Control<span class="hx-absolute -hx-mt-20" id="software-and-control"></span>
+    <a href="#software-and-control" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li><strong>Operating System</strong>: RatOS (Raspberry Pi based)</li>
+<li><strong>Firmware</strong>: Klipper with Mainsail interface</li>
+<li><strong>Lister Plugins</strong>:
+<ul>
+<li>Lister printables (all updated printer parts)</li>
+<li>Lister config (all firmware and macros)</li>
+<li>Lister control (numpad shortcut control)</li>
+</ul>
+</li>
+<li><strong>User Interface</strong>: Web interface and Mobile/Tablet interface</li>
+</ul>
+<h2>Filament Compatibility<span class="hx-absolute -hx-mt-20" id="filament-compatibility"></span>
+    <a href="#filament-compatibility" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li>Optimized for filaments that:
+<ul>
+<li>Don&rsquo;t require a heated chamber</li>
+<li>Are less prone to warping</li>
+<li>Don&rsquo;t need bed temperatures exceeding 90°C</li>
+</ul>
+</li>
+</ul>
+<h3>Compatible Filaments:<span class="hx-absolute -hx-mt-20" id="compatible-filaments"></span>
+    <a href="#compatible-filaments" class="subheading-anchor" aria-label="Permalink for this section"></a></h3><ol>
+<li>PLA variants (Standard, PLA+, filled PLAs, specialty PLAs)</li>
+<li>PETG and its variants (including CF and GF reinforced)</li>
+<li>TPU/TPE (up to 95A hardness)</li>
+<li>PVA (for soluble supports)</li>
+<li>PCTG</li>
+<li>Some low-warp nylon blends</li>
+<li>Various specialty and bio-based filaments</li>
+</ol>
+<h2>Additional Features<span class="hx-absolute -hx-mt-20" id="additional-features"></span>
+    <a href="#additional-features" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li><strong>Filament Runout Sensor</strong>: Included</li>
+<li><strong>Sensorless Homing</strong>: Full axis XYZ homing without physical end-stops</li>
+<li><strong>Upgradability</strong>: Frame designed to accommodate future enhancements</li>
+<li><strong>Open Source</strong>: Full access to CAD files, firmware, and documentation</li>
+<li><strong>Noise Level</strong>: Quiet operation with noticeable but elegant stepper coil humming</li>
+</ul>
+<h2>Printer Components Materials<span class="hx-absolute -hx-mt-20" id="printer-components-materials"></span>
+    <a href="#printer-components-materials" class="subheading-anchor" aria-label="Permalink for this section"></a></h2><ul>
+<li>eSun ePLA-ST for most parts</li>
+<li>eSun PETG for black back panels</li>
+<li>Bamboo Labs PETG-CF for brackets</li>
+<li>eSun TPU 95A for anti-vibration feet</li>
+</ul>
+<p>This comprehensive specification list covers all the key aspects of the CWE3D Lister 3D Printer, highlighting its unique features and capabilities.</p>
+<div class="hextra-cards hx-mt-4 hx-gap-4 hx-grid not-prose" style="--hextra-cards-grid-cols: 3;">
+  <a
+    class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="../parts_layout"
+      ><span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-pt-4 hx-px-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">Parts Layout</span><div class="hextra-card-subtitle hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4 hx-mt-2">Complete directory of all printer parts and their locations.</div></a>
+  <a
+    class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="../getting_started"
+      ><span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-pt-4 hx-px-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">Getting Started</span><div class="hextra-card-subtitle hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4 hx-mt-2">New to Lister? Start here with our comprehensive setup guide.</div></a>
+  <a
+    class="hextra-card hx-group hx-flex hx-flex-col hx-justify-start hx-overflow-hidden hx-rounded-lg hx-border hx-border-gray-200 hx-text-current hx-no-underline dark:hx-shadow-none hover:hx-shadow-gray-100 dark:hover:hx-shadow-none hx-shadow-gray-100 active:hx-shadow-sm active:hx-shadow-gray-200 hx-transition-all hx-duration-200 hover:hx-border-gray-300 hx-bg-transparent hx-shadow-sm dark:hx-border-neutral-800 hover:hx-bg-slate-50 hover:hx-shadow-md dark:hover:hx-border-neutral-700 dark:hover:hx-bg-neutral-900"href="../h2_extruder"
+      ><span class="hextra-card-icon hx-flex hx-font-semibold hx-items-start hx-gap-2 hx-pt-4 hx-px-4 hx-text-gray-700 hover:hx-text-gray-900 dark:hx-text-neutral-200 dark:hover:hx-text-neutral-50">H2 Extruder</span><div class="hextra-card-subtitle hx-line-clamp-3 hx-text-sm hx-font-normal hx-text-gray-500 dark:hx-text-gray-400 hx-px-4 hx-mb-4 hx-mt-2">Learn about the H2 extruder specifications and setup.</div></a>
+</div>
+
+
+        </div>
+        <div class="hx-mt-16"></div>
+        <div class="hx-mb-8 hx-flex hx-items-center hx-border-t hx-pt-8 dark:hx-border-neutral-800 contrast-more:hx-border-neutral-400 dark:contrast-more:hx-border-neutral-400 print:hx-hidden"><a
+        href="/documents/getting_started/"
+        title="Getting Started"
+        class="hx-flex hx-max-w-[50%] hx-items-center hx-gap-1 hx-py-4 hx-text-base hx-font-medium hx-text-gray-600 hx-transition-colors [word-break:break-word] hover:hx-text-primary-600 dark:hx-text-gray-300 md:hx-text-lg ltr:hx-pr-4 rtl:hx-pl-4"
+      ><svg class="hx-inline hx-h-5 hx-shrink-0 ltr:hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>Getting Started</a><a
+        href="/documents/markdown/"
+        title="Markdown"
+        class="hx-flex hx-max-w-[50%] hx-items-center hx-gap-1 hx-py-4 hx-text-base hx-font-medium hx-text-gray-600 hx-transition-colors [word-break:break-word] hover:hx-text-primary-600 dark:hx-text-gray-300 md:hx-text-lg ltr:hx-ml-auto ltr:hx-pl-4 ltr:hx-text-right rtl:hx-mr-auto rtl:hx-pr-4 rtl:hx-text-left"
+      >Markdown<svg class="hx-inline hx-h-5 hx-shrink-0 rtl:-hx-rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg></a></div>
+        
+      </main>
+    </article>
+  </div>
+
+      <footer class="hextra-footer hx-bg-gray-100 hx-pb-[env(safe-area-inset-bottom)] dark:hx-bg-neutral-900 print:hx-bg-transparent"><div
+      class="hextra-custom-footer hx-max-w-screen-xl hx-pl-[max(env(safe-area-inset-left),1.5rem)] hx-pr-[max(env(safe-area-inset-right),1.5rem)] hx-text-gray-600 dark:hx-text-gray-400"
+    ></div><div
+        class="hx-max-w-screen-xl hx-mx-auto hx-flex hx-justify-center hx-py-12 hx-pl-[max(env(safe-area-inset-left),1.5rem)] hx-pr-[max(env(safe-area-inset-right),1.5rem)] hx-text-gray-600 dark:hx-text-gray-400 md:hx-justify-start"
+      >
+        <div class="hx-flex hx-w-full hx-flex-col hx-items-center sm:hx-items-start"><div class="hx-font-semibold"><a class="hx-flex hx-text-sm hx-items-center hx-gap-1 hx-text-current" target="_blank" rel="noopener noreferrer" title="Hextra GitHub Homepage" href="https://github.com/imfing/hextra">
+    <span>Powered by Hextra<svg height=1em class="hx-inline-block ltr:hx-ml-1 rtl:hx-mr-1 hx-align-[-2.5px]" viewBox="0 0 180 180" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="m 105.50024,22.224647 c -9.59169,-5.537563 -21.40871,-5.537563 -31.000093,0 L 39.054693,42.689119 C 29.463353,48.226675 23.55484,58.460531 23.55484,69.535642 v 40.928918 c 0,11.07542 5.908513,21.3092 15.499853,26.84652 l 35.445453,20.46446 c 9.591313,5.53732 21.408404,5.53732 31.000094,0 l 35.44507,-20.46446 c 9.59131,-5.53732 15.49985,-15.7711 15.49985,-26.84652 V 69.535642 c 0,-11.075111 -5.90854,-21.308967 -15.49985,-26.846523 z M 34.112797,85.737639 c -1.384445,2.397827 -1.384445,5.352099 0,7.749927 l 24.781554,42.922974 c 1.38437,2.39783 3.942853,3.87496 6.711592,3.87496 h 49.563107 c 2.76905,0 5.3273,-1.47713 6.71144,-3.87496 l 24.78194,-42.922974 c 1.38414,-2.397828 1.38414,-5.3521 0,-7.749927 L 121.88049,42.814746 c -1.38414,-2.397828 -3.94239,-3.874964 -6.71144,-3.874964 H 65.605944 c -2.768739,0 -5.327223,1.477059 -6.711592,3.874964 z" style="stroke-width:0.774993" /></svg></span>
+  </a></div><div class="hx-mt-6 hx-text-xs">© 2024 Hextra Project.</div></div>
+      </div></footer>
+    
+    <script defer src="/js/main.js" integrity=""></script>
+
+
+<script defer src="/lib/flexsearch/flexsearch.bundle.min.0425860527cc9968f9f049421c7a56b39327d475e2e3a8f550416be3a9134327.js" integrity="sha256-BCWGBSfMmWj58ElCHHpWs5Mn1HXi46j1UEFr46kTQyc="></script>
+    <script defer src="/en.search.js" integrity=""></script>
+
+
+  </body>
+</html>
